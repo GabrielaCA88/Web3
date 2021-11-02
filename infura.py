@@ -9,4 +9,5 @@ web3= Web3(Web3.HTTPProvider (infura_url))
 #print (web3.eth.getBlock(latest))
 
 hash= '0x129f01b132c06910df2833e007701f83e42054b442908280fe255079ced87037'
-print (web3.eth.getTransactionByBlock (hash,2))
+data= (web3.eth.getTransactionByBlock (hash,2))
+print (data)
