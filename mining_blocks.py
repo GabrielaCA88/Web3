@@ -2,7 +2,7 @@ from web3 import Web3
 import numpy as np
 import pandas as pd
 
-infura_url= 'https://mainnet.infura.io/v3/c94afc5937c843b39a39d595881c5dc1'
+infura_url= 'https://mainnet.infura.io/v3/#########'
 web3= Web3(Web3.HTTPProvider (infura_url))
 
 hash= '0xe4f4a4c234de8f0c52f1257e53e3adcef2d698198385b6110775b830a118550d'
