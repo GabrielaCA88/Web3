@@ -3,13 +3,15 @@ import numpy as np
 import pandas as pd
 
 #log in
-infura_url= 'https://mainnet.infura.io/v3/###########'
+infura_url= 'https://mainnet.infura.io/v3/#######'
 web3= Web3(Web3.HTTPProvider (infura_url))
+connected=web3.isConnected()
+print (connected)
 
 # get latest 100 blocks
 blocks_id=[]
 latest = web3.eth.blockNumber
-for i in range(0, 100):
+for i in range(0, 10):
   blocks= (web3.eth.getBlock(latest - i))
   #print(web3.toHex(blocks.hash))
   blocks_id.append (web3.toHex(blocks.hash))
